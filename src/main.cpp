@@ -21,9 +21,7 @@ int main()
         std::cout << "Hello there!2" << std::endl;
     }
 
-
-    std::cout << "Changes were made.." << std::endl;
-    std::cout << "Hmmm..." << std::endl;
+    std::cout << "Ok, those changes were bad.." << std::endl;
 
     return 0;
 }
