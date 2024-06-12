@@ -2,26 +2,41 @@
 
 #include <iostream>
 
+
+class Person
+{
+private:
+    std::string name;
+    int age;
+
+public:
+    Person(std::string name, int age)
+    {
+        this->name = name;
+        this->age = age;
+    }
+
+    void print()
+    {
+        std::cout << "Name: " << name << std::endl;
+        std::cout << "Age: " << age << std::endl;
+    }
+};
+
+
 void test()
 {
 
     std::cout << "Testing" << std::endl;
 }
 
+
 int main()
 {
+    Person person("John", 30);
+    person.print();
 
-    
-    constexpr int test = 5;
-    std::string ok = "asdasd";
-
-
-    for (size_t i = 0; i < test; i++)
-    {
-        std::cout << "Hello there!2" << std::endl;
-    }
-
-    std::cout << "Ok, those changes were bad.." << std::endl;
+    std::cout << "Ok, this is it?" << std::endl;
 
     return 0;
 }
